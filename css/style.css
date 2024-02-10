@@ -21,7 +21,9 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     line-height: 15px;
+
 }
+
 
 /*=========================================
 Header Area style
@@ -74,16 +76,18 @@ Form One style
     height: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-#form-one .payment-form{
+#form-one .payment-form {
     padding: 30px;
     width: 350px;
     background-color: #fff;
     height: auto;
+    min-height: 443px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .payment-form h1 {
     padding: 15px 0 30px;
     font-weight: 500;
+    line-height: 35px;
 }
 #form-one .payment-details > .box-1{
     text-align: center;
@@ -168,6 +172,19 @@ padding: 10px;
 #form-one .payment-form .box{
     padding: 10px 0;
 }
+#form-one .payment-form .paypal-form {
+    /* display: none; */
+    transform: scale(0.5);
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    height: 0;
+}
+#form-one .payment-form .box2 {
+    position: relative;
+}
 #form-one .payment-form .box2 input{
 
     position: relative;
@@ -180,17 +197,18 @@ padding: 10px;
     display: inline;
     border: 1px solid #ddd;
     margin-left: 35%;
-    margin-top: -31px;
-    padding: 5px;
+    /* margin-top: -31px; */
+    right: 8px;
+    bottom: 21px;
+    /* padding: 5px; */
 }
 #form-one .payment-form .box3{
     
     display: flex;
 }
-#form-one .payment-form .box3 .inner-box1{
-    
+#form-one .payment-form .box3 .inner-box1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     flex-wrap: wrap;
 }
 #form-one .payment-form .box3 .inner-box1 input{
@@ -243,7 +261,7 @@ padding: 10px;
     
     color: #383737;
 }
-@media (max-width:768px){
+@media (max-width:576px){
     #form-one{
         height: auto;
     }
@@ -260,11 +278,11 @@ padding: 10px;
         margin-bottom: 30px;
         max-width: 350px;
         
-        width: 74% !important;
+        width: 90% !important;
     }
     #form-one .payment-form {
         max-width: 350px;
-        width: 74%;
+        width: 90%;
        
       
     }
@@ -277,6 +295,43 @@ padding: 10px;
         margin-left: 45%;
 
     }
+    .payment-form h1 {
+        font-size: 5vw;
+    }
 
 
+}
+@media (max-width:300px){
+
+    #form-one .payment-form .box2 img {
+        display: none;
+    }
+    .payment-form h1 {
+        font-size: 5vw;
+    }
+    #form-one .payment-details .payment-selection img {
+        width: auto;
+        height: 10px;
+    }
+
+
+}
+
+
+/* animation CSS */
+.fadein{
+    transform: scale(0.5);
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+    height: 0;
+}
+.fadeout{
+    transform: none !important;
+    opacity: 1 !important;
+    transition: 0.5s !important;
+    visibility: visible !important;
+    height: auto !important;
+    position: inherit !important;
+    top: inherit !important;
 }
