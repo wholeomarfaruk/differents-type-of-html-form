@@ -178,8 +178,8 @@ padding: 10px;
     opacity: 0;
     transition: 0.5s;
     visibility: hidden;
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -360px;
     height: 0;
 }
 #form-one .payment-form .box2 {
