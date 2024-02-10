@@ -56,11 +56,11 @@ Form One style
 #form-one {
     width: 100%;
     min-height: 100vh;
+    object-fit: cover;
+    background-size: 100% 100%;
     background-image: url("../img/Best-Payment-Gateway-for-your-Business.jpg");
-    background-size:cover;
     background-repeat: no-repeat;
     position: relative;
-    
 }
 #form-one .payment-gateway-area {
     display: flex;
@@ -256,5 +256,27 @@ padding: 10px;
         top: inherit;
         margin: 0 auto;
     }
+    .payment-details {
+        margin-bottom: 30px;
+        max-width: 350px;
+        
+        width: 74% !important;
+    }
+    #form-one .payment-form {
+        max-width: 350px;
+        width: 74%;
+       
+      
+    }
+    #form-one {
+        
+        
+        background: linear-gradient(90deg, #8f21a9, #030737e3);
+    }
+    #form-one .payment-form .box2 img {
+        margin-left: 45%;
+
+    }
+
 
 }

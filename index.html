@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Different Type of Form</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -60,7 +61,7 @@
                     <a href="#"><i class="fa-solid fa-arrow-left"></i> Back to Order Overview</a>
                 </div>
             </div>
-            <div class="payment-form">
+            <div class="payment-form" data-aos="fade-up">
                 <h1>Your Payment Details</h1>
                 <div class="box box1">
                     <label for="pay-form-inout-1">Name on Card</label>
@@ -93,5 +94,13 @@
             </div>
         </div>
     </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
